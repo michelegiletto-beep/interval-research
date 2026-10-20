@@ -52,10 +52,11 @@ docker=docker.replace("COPY . /app", "COPY interval-source.tar.gz /tmp/interval-
 (space / "Dockerfile").write_text(docker)
 (space / "README.md").write_text('''---
 title: Interval
-emoji: ◫
+emoji: 🔬
 colorFrom: gray
 colorTo: green
 sdk: gradio
+sdk_version: 5.49.1
 app_file: app.py
 python_version: 3.12.12
 license: apache-2.0
