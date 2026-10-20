@@ -22,6 +22,12 @@ Final read-only audit recomputed manuscript tables from CSV, counted 90 dense an
 
 Improvements: validate NPY headers and byte counts before loading; enforce request-body budgets, admitted Host names, public compute admission/retention and guaranteed queue-slot release; make adapter metadata portable; include an explicit Docker reference and a source package manifest that includes the adapted weights. The complete test suite passed 12 tests after these changes, including real API execution and portable inference restoration. Desktop interface execution also completed a model-selected procedure; narrow-screen and final package checks are recorded in release evidence.
 
+## Hosted integration verification
+
+The final publication checks additionally exercised the actual Hugging Face runtime. Its default Gradio version conflicted with the pinned Transformers dependency, so the transport pins Gradio 5.49.1. Adapter loading now explicitly starts on CPU. A separate loopback CPU service isolates numerical optimization from ZeroGPU's CUDA emulation; the numerical implementation fingerprint is unchanged.
+
+The remote API completed a model-selected comparison of all nine methods, rejected a cross-origin write with HTTP 403, rejected an oversized body with HTTP 413 and exported a reusable inference bundle. A second comparison completed through the public browser interface. The optional Gradio GPU diagnostic returned a procedure proposal on CUDA. Receipts and a screenshot are supplied in `evidence/hosted-smoke` and `evidence/interface` in the complete release archive. These are delivery checks, separate from the 210 scientific fitting runs.
+
 ## Accepted scope
 
 The release is a working single-user research reference with synthetic numerical evidence and a bounded, locally adapted procedure selector. Domain profiles configure the same software. Satellite, clinical, general autonomous planning, physical-QPU and quantum-advantage performance remain unestablished. Timing records whole experiments and does not support per-method speed comparisons.

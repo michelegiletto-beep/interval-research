@@ -6,6 +6,9 @@ import os
 import subprocess
 import sys
 import tarfile
+import atexit
+import time
+import urllib.request
 
 os.environ["INTERVAL_PUBLIC_DEMO"] = "1"
 os.environ["INTERVAL_RUNTIME"] = "/tmp/interval-runtime"
@@ -22,10 +25,36 @@ sys.path.insert(0, str(source))
 if not (source / "models" / "base" / "config.json").exists():
     subprocess.run([sys.executable, str(source / "scripts" / "download_model.py")], check=True)
 
+# Keep CPU optimization outside ZeroGPU's process-wide CUDA emulation.
+# This is the unmodified local server, bound to a private loopback port.
+child_env = dict(os.environ)
+child_env["PYTHONPATH"] = str(source) + os.pathsep + child_env.get("PYTHONPATH", "")
+cpu_backend = subprocess.Popen([sys.executable, "-m", "interval.cli", "serve", "--port", "8765"],
+                               cwd=source, env=child_env)
+atexit.register(cpu_backend.terminate)
+
+
+def status():
+    with urllib.request.urlopen("http://127.0.0.1:8765/api/status", timeout=5) as response:
+        return json.load(response)
+
+
+for attempt in range(120):
+    if cpu_backend.poll() is not None:
+        raise RuntimeError("The isolated CPU research backend exited during startup")
+    try:
+        status()
+        break
+    except (OSError, ValueError):
+        time.sleep(.25)
+else:
+    raise RuntimeError("The isolated CPU research backend did not become ready")
+
 import gradio as gr
 import spaces
-from fastapi import FastAPI
-from interval.server import app as research_app, status
+import httpx
+from fastapi import FastAPI, Request
+from starlette.responses import JSONResponse, Response, RedirectResponse
 from interval.planner import load_model, score_candidates
 
 # ZeroGPU intercepts this placement, then packs weights before serving requests.
@@ -58,7 +87,38 @@ with gr.Blocks() as diagnostics:
 
 diagnostics.queue()
 app = gr.mount_gradio_app(FastAPI(), diagnostics, path="/runtime-status")
-app.mount("/", research_app)
+
+
+@app.get("/runtime-status", include_in_schema=False)
+def diagnostics_redirect():
+    return RedirectResponse("/runtime-status/")
+
+
+class ResearchProxy:
+    async def __call__(self, scope, receive, send):
+        if scope["type"] != "http":
+            return
+        request = Request(scope, receive)
+        body = bytearray()
+        async for chunk in request.stream():
+            body.extend(chunk)
+            if len(body) > 16384:
+                await JSONResponse({"detail": "Request body exceeds its budget"}, status_code=413)(scope, receive, send)
+                return
+        excluded = {"connection", "keep-alive", "transfer-encoding", "te", "trailer", "upgrade", "content-length", "content-encoding"}
+        headers = {k: v for k, v in request.headers.items() if k.lower() not in excluded}
+        try:
+            async with httpx.AsyncClient(timeout=120) as client:
+                result = await client.request(request.method, "http://127.0.0.1:8765" + request.url.path,
+                                              params=request.query_params, headers=headers, content=bytes(body))
+            response = Response(result.content, status_code=result.status_code,
+                                headers={k: v for k, v in result.headers.items() if k.lower() not in excluded})
+        except httpx.RequestError:
+            response = JSONResponse({"detail": "The research backend is unavailable"}, status_code=503)
+        await response(scope, receive, send)
+
+
+app.mount("/", ResearchProxy())
 
 if __name__ == "__main__":
     import uvicorn

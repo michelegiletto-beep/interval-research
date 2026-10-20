@@ -1,0 +1,14 @@
+{
+  "url": "https://magic51-interval-research.hf.space/runtime-status/",
+  "source": "Visible result from the Gradio GPU inference diagnostic",
+  "recipe": "compare",
+  "candidate_scores": {
+    "compare": -0.0006400387501344085,
+    "tails": -2.0690720081329346,
+    "measurements": -1.2691069841384888,
+    "neural": -1.9196099042892456
+  },
+  "device": "cuda:0",
+  "inference_seconds": 1.5627509788610041,
+  "scope": "Diagnostic inference only; numerical execution is available in the main workspace."
+}

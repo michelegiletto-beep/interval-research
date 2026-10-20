@@ -14,7 +14,7 @@ roots = ["interval", "web", "docs", "tests", "configs", "profiles", "scripts", "
 files = [root / name for name in ("README.md","LICENSE","NOTICE","CITATION.cff","pyproject.toml","Dockerfile","requirements-docker.txt",".gitignore",".dockerignore")]
 for directory in roots:
     files += [p for p in (root / directory).rglob("*") if p.is_file() and "__pycache__" not in p.parts and p.suffix not in {".pyc"}]
-for directory in ("evidence/final-dense","evidence/final-sparse","evidence/invariance","evidence/figures","evidence/showcase"):
+for directory in ("evidence/final-dense","evidence/final-sparse","evidence/invariance","evidence/figures","evidence/showcase","evidence/hosted-smoke","evidence/interface"):
     files += [p for p in (root / directory).rglob("*") if p.is_file()]
 for name in ("evidence/README.md","evidence/report-summary.json","evidence/environment-lock.json","models/base-model.json","models/training-receipt.json",
              "models/planner/adapter_config.json","models/planner/adapter_model.safetensors"):
@@ -60,6 +60,13 @@ sdk_version: 5.49.1
 app_file: app.py
 python_version: 3.12.12
 license: apache-2.0
+models:
+  - HuggingFaceTB/SmolLM2-135M-Instruct
+tags:
+  - change-detection
+  - copula
+  - quantum-simulation
+  - local-inference
 short_description: Local neural planner and reproducible change detection
 ---
 
@@ -75,7 +82,7 @@ This is a single-user research reference, not a clinically or field-validated
 institutional service. No quantum advantage is established.
 
 - [Source and installation](https://github.com/michelegiletto-beep/interval-research)
-- [System Labs](https://giletto-systems-lab.michele-giletto.chatgpt.site)
+- [System Labs research record](https://giletto-systems-lab.michele-giletto.chatgpt.site/projects/interval.html)
 - [Manuscript draft](https://github.com/michelegiletto-beep/interval-research/blob/main/docs/manuscript.md)
 - [Complete source, adapter and evidence archive](https://huggingface.co/spaces/Magic51/interval-research/resolve/main/interval-source.tar.gz)
 - [Upstream model](https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct)

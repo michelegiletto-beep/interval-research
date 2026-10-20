@@ -1,0 +1,15 @@
+{
+  "url": "https://magic51-interval-research.hf.space",
+  "job_id": "64802056368943aba56e2508163ff7ed",
+  "status": "complete",
+  "planner_origin": "embedded-language-model-likelihood",
+  "recipe": "compare",
+  "adapter_sha256": "5035700c305ccfc405229ce822eb18bc6e0f13a720e54aa12bc474faed3d85e8",
+  "methods": 9,
+  "result_sha256": "b2f0133252d884ef24b19d5dfcd05a2b89bc4edbc8dea435b6be2988efbcdd9d",
+  "seconds": 7.337112900000648,
+  "cross_origin_write": "403",
+  "oversized_body": "413",
+  "export_files": 6,
+  "export_bytes": 263670
+}
