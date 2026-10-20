@@ -1,0 +1,541 @@
+{
+  "created_utc": "2026-10-20T11:01:03.257629+00:00",
+  "model": "HuggingFaceTB/SmolLM2-135M-Instruct",
+  "base_revision": "12fd25f77366fa6b3b4b768ec3050bf629380bac",
+  "license": "apache-2.0",
+  "method": "LoRA supervised synthetic instruction adaptation",
+  "steps": 120,
+  "batch_size": 4,
+  "learning_rate": 0.0004,
+  "rank": 8,
+  "device": "cuda",
+  "hardware": "NVIDIA GeForce RTX 2080",
+  "train_examples": 96,
+  "test_examples": 32,
+  "base_evaluation": {
+    "accuracy": 0.28125,
+    "n": 32,
+    "records": [
+      {
+        "request": "Arrange a documented experiment to compare classical, neural and quantum estimators. Project: External evaluation; seed: 353.",
+        "recipe": "compare",
+        "prediction": "compare",
+        "correct": true
+      },
+      {
+        "request": "Arrange a documented experiment to benchmark every background estimator. Project: External evaluation; seed: 462.",
+        "recipe": "compare",
+        "prediction": "compare",
+        "correct": true
+      },
+      {
+        "request": "Arrange a documented experiment to run the full estimator comparison. Project: External evaluation; seed: 58.",
+        "recipe": "compare",
+        "prediction": "compare",
+        "correct": true
+      },
+      {
+        "request": "Arrange a documented experiment to evaluate the available methods side by side. Project: External evaluation; seed: 947.",
+        "recipe": "compare",
+        "prediction": "compare",
+        "correct": true
+      },
+      {
+        "request": "The lab would like to compare classical, neural and quantum estimators. Which available workflow should run?",
+        "recipe": "compare",
+        "prediction": "compare",
+        "correct": true
+      },
+      {
+        "request": "The lab would like to benchmark every background estimator. Which available workflow should run?",
+        "recipe": "compare",
+        "prediction": "compare",
+        "correct": true
+      },
+      {
+        "request": "The lab would like to run the full estimator comparison. Which available workflow should run?",
+        "recipe": "compare",
+        "prediction": "compare",
+        "correct": true
+      },
+      {
+        "request": "The lab would like to evaluate the available methods side by side. Which available workflow should run?",
+        "recipe": "compare",
+        "prediction": "compare",
+        "correct": true
+      },
+      {
+        "request": "Arrange a documented experiment to sweep marginal tail strength. Project: External evaluation; seed: 553.",
+        "recipe": "tails",
+        "prediction": "compare",
+        "correct": false
+      },
+      {
+        "request": "Arrange a documented experiment to study heavy-tailed observation sensitivity. Project: External evaluation; seed: 539.",
+        "recipe": "tails",
+        "prediction": "compare",
+        "correct": false
+      },
+      {
+        "request": "Arrange a documented experiment to compare weak, medium and strong distribution tails. Project: External evaluation; seed: 413.",
+        "recipe": "tails",
+        "prediction": "compare",
+        "correct": false
+      },
+      {
+        "request": "Arrange a documented experiment to repeat the experiment for three tail strengths. Project: External evaluation; seed: 150.",
+        "recipe": "tails",
+        "prediction": "compare",
+        "correct": false
+      },
+      {
+        "request": "The lab would like to sweep marginal tail strength. Which available workflow should run?",
+        "recipe": "tails",
+        "prediction": "compare",
+        "correct": false
+      },
+      {
+        "request": "The lab would like to study heavy-tailed observation sensitivity. Which available workflow should run?",
+        "recipe": "tails",
+        "prediction": "compare",
+        "correct": false
+      },
+      {
+        "request": "The lab would like to compare weak, medium and strong distribution tails. Which available workflow should run?",
+        "recipe": "tails",
+        "prediction": "compare",
+        "correct": false
+      },
+      {
+        "request": "The lab would like to repeat the experiment for three tail strengths. Which available workflow should run?",
+        "recipe": "tails",
+        "prediction": "compare",
+        "correct": false
+      },
+      {
+        "request": "Arrange a documented experiment to study finite measurement counts and readout errors. Project: External evaluation; seed: 977.",
+        "recipe": "measurements",
+        "prediction": "compare",
+        "correct": false
+      },
+      {
+        "request": "Arrange a documented experiment to compare exact sampling with noisy measurements. Project: External evaluation; seed: 811.",
+        "recipe": "measurements",
+        "prediction": "compare",
+        "correct": false
+      },
+      {
+        "request": "Arrange a documented experiment to measure shot noise sensitivity. Project: External evaluation; seed: 583.",
+        "recipe": "measurements",
+        "prediction": "compare",
+        "correct": false
+      },
+      {
+        "request": "Arrange a documented experiment to inspect the effect of measurement-bit flips. Project: External evaluation; seed: 207.",
+        "recipe": "measurements",
+        "prediction": "compare",
+        "correct": false
+      },
+      {
+        "request": "The lab would like to study finite measurement counts and readout errors. Which available workflow should run?",
+        "recipe": "measurements",
+        "prediction": "compare",
+        "correct": false
+      },
+      {
+        "request": "The lab would like to compare exact sampling with noisy measurements. Which available workflow should run?",
+        "recipe": "measurements",
+        "prediction": "compare",
+        "correct": false
+      },
+      {
+        "request": "The lab would like to measure shot noise sensitivity. Which available workflow should run?",
+        "recipe": "measurements",
+        "prediction": "compare",
+        "correct": false
+      },
+      {
+        "request": "The lab would like to inspect the effect of measurement-bit flips. Which available workflow should run?",
+        "recipe": "measurements",
+        "prediction": "compare",
+        "correct": false
+      },
+      {
+        "request": "Arrange a documented experiment to train and evaluate the conditional neural network. Project: External evaluation; seed: 381.",
+        "recipe": "neural",
+        "prediction": "compare",
+        "correct": false
+      },
+      {
+        "request": "Arrange a documented experiment to fit a neural background estimator. Project: External evaluation; seed: 799.",
+        "recipe": "neural",
+        "prediction": "compare",
+        "correct": false
+      },
+      {
+        "request": "Arrange a documented experiment to assess the learned neural conditional mean. Project: External evaluation; seed: 918.",
+        "recipe": "neural",
+        "prediction": "compare",
+        "correct": false
+      },
+      {
+        "request": "Arrange a documented experiment to train the neural model on local observations. Project: External evaluation; seed: 25.",
+        "recipe": "neural",
+        "prediction": "compare",
+        "correct": false
+      },
+      {
+        "request": "The lab would like to train and evaluate the conditional neural network. Which available workflow should run?",
+        "recipe": "neural",
+        "prediction": "compare",
+        "correct": false
+      },
+      {
+        "request": "The lab would like to fit a neural background estimator. Which available workflow should run?",
+        "recipe": "neural",
+        "prediction": "neural",
+        "correct": true
+      },
+      {
+        "request": "The lab would like to assess the learned neural conditional mean. Which available workflow should run?",
+        "recipe": "neural",
+        "prediction": "compare",
+        "correct": false
+      },
+      {
+        "request": "The lab would like to train the neural model on local observations. Which available workflow should run?",
+        "recipe": "neural",
+        "prediction": "compare",
+        "correct": false
+      }
+    ]
+  },
+  "adapted_evaluation": {
+    "accuracy": 1.0,
+    "n": 32,
+    "records": [
+      {
+        "request": "Arrange a documented experiment to compare classical, neural and quantum estimators. Project: External evaluation; seed: 353.",
+        "recipe": "compare",
+        "prediction": "compare",
+        "correct": true
+      },
+      {
+        "request": "Arrange a documented experiment to benchmark every background estimator. Project: External evaluation; seed: 462.",
+        "recipe": "compare",
+        "prediction": "compare",
+        "correct": true
+      },
+      {
+        "request": "Arrange a documented experiment to run the full estimator comparison. Project: External evaluation; seed: 58.",
+        "recipe": "compare",
+        "prediction": "compare",
+        "correct": true
+      },
+      {
+        "request": "Arrange a documented experiment to evaluate the available methods side by side. Project: External evaluation; seed: 947.",
+        "recipe": "compare",
+        "prediction": "compare",
+        "correct": true
+      },
+      {
+        "request": "The lab would like to compare classical, neural and quantum estimators. Which available workflow should run?",
+        "recipe": "compare",
+        "prediction": "compare",
+        "correct": true
+      },
+      {
+        "request": "The lab would like to benchmark every background estimator. Which available workflow should run?",
+        "recipe": "compare",
+        "prediction": "compare",
+        "correct": true
+      },
+      {
+        "request": "The lab would like to run the full estimator comparison. Which available workflow should run?",
+        "recipe": "compare",
+        "prediction": "compare",
+        "correct": true
+      },
+      {
+        "request": "The lab would like to evaluate the available methods side by side. Which available workflow should run?",
+        "recipe": "compare",
+        "prediction": "compare",
+        "correct": true
+      },
+      {
+        "request": "Arrange a documented experiment to sweep marginal tail strength. Project: External evaluation; seed: 553.",
+        "recipe": "tails",
+        "prediction": "tails",
+        "correct": true
+      },
+      {
+        "request": "Arrange a documented experiment to study heavy-tailed observation sensitivity. Project: External evaluation; seed: 539.",
+        "recipe": "tails",
+        "prediction": "tails",
+        "correct": true
+      },
+      {
+        "request": "Arrange a documented experiment to compare weak, medium and strong distribution tails. Project: External evaluation; seed: 413.",
+        "recipe": "tails",
+        "prediction": "tails",
+        "correct": true
+      },
+      {
+        "request": "Arrange a documented experiment to repeat the experiment for three tail strengths. Project: External evaluation; seed: 150.",
+        "recipe": "tails",
+        "prediction": "tails",
+        "correct": true
+      },
+      {
+        "request": "The lab would like to sweep marginal tail strength. Which available workflow should run?",
+        "recipe": "tails",
+        "prediction": "tails",
+        "correct": true
+      },
+      {
+        "request": "The lab would like to study heavy-tailed observation sensitivity. Which available workflow should run?",
+        "recipe": "tails",
+        "prediction": "tails",
+        "correct": true
+      },
+      {
+        "request": "The lab would like to compare weak, medium and strong distribution tails. Which available workflow should run?",
+        "recipe": "tails",
+        "prediction": "tails",
+        "correct": true
+      },
+      {
+        "request": "The lab would like to repeat the experiment for three tail strengths. Which available workflow should run?",
+        "recipe": "tails",
+        "prediction": "tails",
+        "correct": true
+      },
+      {
+        "request": "Arrange a documented experiment to study finite measurement counts and readout errors. Project: External evaluation; seed: 977.",
+        "recipe": "measurements",
+        "prediction": "measurements",
+        "correct": true
+      },
+      {
+        "request": "Arrange a documented experiment to compare exact sampling with noisy measurements. Project: External evaluation; seed: 811.",
+        "recipe": "measurements",
+        "prediction": "measurements",
+        "correct": true
+      },
+      {
+        "request": "Arrange a documented experiment to measure shot noise sensitivity. Project: External evaluation; seed: 583.",
+        "recipe": "measurements",
+        "prediction": "measurements",
+        "correct": true
+      },
+      {
+        "request": "Arrange a documented experiment to inspect the effect of measurement-bit flips. Project: External evaluation; seed: 207.",
+        "recipe": "measurements",
+        "prediction": "measurements",
+        "correct": true
+      },
+      {
+        "request": "The lab would like to study finite measurement counts and readout errors. Which available workflow should run?",
+        "recipe": "measurements",
+        "prediction": "measurements",
+        "correct": true
+      },
+      {
+        "request": "The lab would like to compare exact sampling with noisy measurements. Which available workflow should run?",
+        "recipe": "measurements",
+        "prediction": "measurements",
+        "correct": true
+      },
+      {
+        "request": "The lab would like to measure shot noise sensitivity. Which available workflow should run?",
+        "recipe": "measurements",
+        "prediction": "measurements",
+        "correct": true
+      },
+      {
+        "request": "The lab would like to inspect the effect of measurement-bit flips. Which available workflow should run?",
+        "recipe": "measurements",
+        "prediction": "measurements",
+        "correct": true
+      },
+      {
+        "request": "Arrange a documented experiment to train and evaluate the conditional neural network. Project: External evaluation; seed: 381.",
+        "recipe": "neural",
+        "prediction": "neural",
+        "correct": true
+      },
+      {
+        "request": "Arrange a documented experiment to fit a neural background estimator. Project: External evaluation; seed: 799.",
+        "recipe": "neural",
+        "prediction": "neural",
+        "correct": true
+      },
+      {
+        "request": "Arrange a documented experiment to assess the learned neural conditional mean. Project: External evaluation; seed: 918.",
+        "recipe": "neural",
+        "prediction": "neural",
+        "correct": true
+      },
+      {
+        "request": "Arrange a documented experiment to train the neural model on local observations. Project: External evaluation; seed: 25.",
+        "recipe": "neural",
+        "prediction": "neural",
+        "correct": true
+      },
+      {
+        "request": "The lab would like to train and evaluate the conditional neural network. Which available workflow should run?",
+        "recipe": "neural",
+        "prediction": "neural",
+        "correct": true
+      },
+      {
+        "request": "The lab would like to fit a neural background estimator. Which available workflow should run?",
+        "recipe": "neural",
+        "prediction": "neural",
+        "correct": true
+      },
+      {
+        "request": "The lab would like to assess the learned neural conditional mean. Which available workflow should run?",
+        "recipe": "neural",
+        "prediction": "neural",
+        "correct": true
+      },
+      {
+        "request": "The lab would like to train the neural model on local observations. Which available workflow should run?",
+        "recipe": "neural",
+        "prediction": "neural",
+        "correct": true
+      }
+    ]
+  },
+  "training_loss": [
+    4.6410298347473145,
+    4.0464091300964355,
+    3.5160067081451416,
+    3.464287281036377,
+    3.594353199005127,
+    3.493051528930664,
+    3.186541795730591,
+    2.6339917182922363,
+    2.2874414920806885,
+    2.2956957817077637,
+    2.2948222160339355,
+    2.0681307315826416,
+    1.2121427059173584,
+    1.2572685480117798,
+    1.005277395248413,
+    0.9618938565254211,
+    0.8334156274795532,
+    1.1022249460220337,
+    0.843813955783844,
+    0.7546589374542236,
+    0.505859375,
+    0.46374908089637756,
+    0.23316028714179993,
+    0.4456941783428192,
+    0.27021151781082153,
+    0.21651312708854675,
+    0.3235725164413452,
+    0.16993167996406555,
+    0.23487551510334015,
+    0.399245947599411,
+    0.09196227043867111,
+    0.11576808989048004,
+    0.13881364464759827,
+    0.17385002970695496,
+    0.11365805566310883,
+    0.1466185301542282,
+    0.23528699576854706,
+    0.06421681493520737,
+    0.15009084343910217,
+    0.1075613796710968,
+    0.0473870225250721,
+    0.04486848786473274,
+    0.13573364913463593,
+    0.01846923679113388,
+    0.013806462287902832,
+    0.0357489287853241,
+    0.013611871749162674,
+    0.1314317137002945,
+    0.05750385671854019,
+    0.014620412141084671,
+    0.03017699532210827,
+    0.012360104359686375,
+    0.01681959070265293,
+    0.01642351970076561,
+    0.006484637036919594,
+    0.01479272823780775,
+    0.007925265468657017,
+    0.011152705177664757,
+    0.006053566001355648,
+    0.013284795917570591,
+    0.03588932380080223,
+    0.006437060423195362,
+    0.019834868609905243,
+    0.024389099329710007,
+    0.012289713136851788,
+    0.022012952715158463,
+    0.03056274726986885,
+    0.002456669695675373,
+    0.003093508305028081,
+    0.00392730999737978,
+    0.003620659466832876,
+    0.037073057144880295,
+    0.003414473030716181,
+    0.004803689196705818,
+    0.0034656657371670008,
+    0.003749906551092863,
+    0.003532872535288334,
+    0.004620078951120377,
+    0.0021610353142023087,
+    0.0028337975963950157,
+    0.002777940360829234,
+    0.004631565883755684,
+    0.0022497791796922684,
+    0.005186222493648529,
+    0.002925229724496603,
+    0.0024411992635577917,
+    0.002428115112707019,
+    0.003892957465723157,
+    0.0026415211614221334,
+    0.002720564603805542,
+    0.005287946201860905,
+    0.0013779684668406844,
+    0.0018688999116420746,
+    0.001874488894827664,
+    0.0021327005233615637,
+    0.005036688409745693,
+    0.0013174123596400023,
+    0.002785414457321167,
+    0.0015708437422290444,
+    0.0018307188292965293,
+    0.0014046719297766685,
+    0.002351623261347413,
+    0.0015552304685115814,
+    0.001605885336175561,
+    0.0014701507752761245,
+    0.002083917846903205,
+    0.0013913681032136083,
+    0.0022060584742575884,
+    0.00195451476611197,
+    0.0014277665177360177,
+    0.0018275853944942355,
+    0.0018944271141663194,
+    0.0013219347456470132,
+    0.0018564973725005984,
+    0.002689776476472616,
+    0.0010600762907415628,
+    0.0013052962021902204,
+    0.0012049047509208322,
+    0.0012974239652976394,
+    0.00313409510999918
+  ],
+  "seconds": 59.10739760000433,
+  "adapter_sha256": "5035700c305ccfc405229ce822eb18bc6e0f13a720e54aa12bc474faed3d85e8",
+  "trainable_parameters": 460800,
+  "limits": [
+    "Synthetic held-out phrasing of four known recipes; no evidence of general reasoning or autonomous discovery.",
+    "Candidate likelihood ranking always returns a schema-valid recipe by construction.",
+    "Accuracy measures intent selection, not scientific validity of an experiment."
+  ]
+}

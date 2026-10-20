@@ -1,0 +1,22 @@
+Interval
+Copyright 2026 Michele Giletto
+
+The new source and synthetic instruction examples are distributed under Apache License 2.0.
+
+The embedded instruction router uses HuggingFaceTB/SmolLM2-135M-Instruct,
+revision 12fd25f77366fa6b3b4b768ec3050bf629380bac, distributed under Apache License 2.0.
+Upstream repository: https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct
+Citation: Allal et al. (2025), SmolLM2: When Smol Goes Big — Data-Centric Training
+of a Small Language Model, arXiv:2502.02737.
+The supplied LoRA adapter was trained locally by System Labs on the included
+synthetic procedure-selection examples. It is a derivative adaptation, not a
+new pretrained foundation model.
+
+Research inspiration: Sekwao et al. (2026), SAR and InSAR Change Detection with
+Quantum Generative Models, arXiv:2609.05313. Interval is an independent smaller
+simulation and benchmark. No original satellite observations, annotations or
+IonQ source implementation are redistributed.
+
+PyTorch, Transformers, PEFT, NumPy, SciPy, scikit-learn, FastAPI, Uvicorn and
+Safetensors retain their own copyright notices and licenses. Their source
+code is obtained through package dependencies, rather than copied here.

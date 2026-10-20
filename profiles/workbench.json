@@ -1,0 +1,1 @@
+{"name":"Client workspace","purpose":"Editable local research workspace","status":"domain qualification required","data":"separate train, calibration and test observations","procedure":"compare","config":{"score_mode":"absolute","bits":4,"training_pixels":3072},"external_actions":[]}

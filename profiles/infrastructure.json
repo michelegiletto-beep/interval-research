@@ -1,0 +1,1 @@
+{"name":"Infrastructure monitoring","purpose":"Passive post-event change assessment and maintenance inspection support","status":"reference profile; no field validation","data":"independent acquisition regions and dates required","procedure":"compare","config":{"score_mode":"log","bits":4,"training_pixels":1024},"external_actions":[]}

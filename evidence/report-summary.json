@@ -1,0 +1,58 @@
+{
+  "fits": 180,
+  "scorers": 2,
+  "monotone_controls": 30,
+  "base_router_accuracy": 0.28125,
+  "adapted_router_accuracy": 1.0,
+  "macro_f1": {
+    "final-dense": {
+      "absolute": {
+        "log_ratio": 0.9360978134047222,
+        "copula_rank_mean": 0.4787557578538697,
+        "copula_intensity_mean": 0.4970676358570968,
+        "smoothed_copula": 0.4781195143300918,
+        "gaussian_copula": 0.49917263497289294,
+        "neural_regression": 0.48152320989878145,
+        "qcbm_exact": 0.46730221766429453,
+        "qcbm_shots": 0.4619682116063267,
+        "qcbm_readout": 0.46581055810845984
+      },
+      "log": {
+        "log_ratio": 0.9360978134047222,
+        "copula_rank_mean": 0.8575679136174843,
+        "copula_intensity_mean": 0.8478990654317524,
+        "smoothed_copula": 0.7464950532287722,
+        "gaussian_copula": 0.8511552419934957,
+        "neural_regression": 0.7359800225786085,
+        "qcbm_exact": 0.549509436296076,
+        "qcbm_shots": 0.5483462535946741,
+        "qcbm_readout": 0.529896961501011
+      }
+    },
+    "final-sparse": {
+      "absolute": {
+        "log_ratio": 0.9436636919837994,
+        "copula_rank_mean": 0.426887666606222,
+        "copula_intensity_mean": 0.433638171889088,
+        "smoothed_copula": 0.42673052346023166,
+        "gaussian_copula": 0.44507955542342353,
+        "neural_regression": 0.4298065259726957,
+        "qcbm_exact": 0.420896496885895,
+        "qcbm_shots": 0.4198831629867372,
+        "qcbm_readout": 0.4202005145954932
+      },
+      "log": {
+        "log_ratio": 0.9436636919837994,
+        "copula_rank_mean": 0.8030624897760169,
+        "copula_intensity_mean": 0.7983551929607233,
+        "smoothed_copula": 0.6802755749713241,
+        "gaussian_copula": 0.8199261397984263,
+        "neural_regression": 0.8205965600298281,
+        "qcbm_exact": 0.5059516002622005,
+        "qcbm_shots": 0.5066965565858093,
+        "qcbm_readout": 0.4828260542535686
+      }
+    }
+  },
+  "implementation_sha256": "21ad08c6a52090c1f5a33a51126508dd8307fa644b5a8994a9c0d5ed52c7bed1"
+}

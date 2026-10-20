@@ -1,0 +1,11 @@
+{
+  "seed": 7,
+  "bits": 4,
+  "tail": 1.1,
+  "side": 32,
+  "quantum_steps": 100,
+  "neural_steps": 140,
+  "shots": 5000,
+  "readout_error": 0.01,
+  "test_shift": 0.0
+}

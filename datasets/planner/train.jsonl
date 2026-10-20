@@ -1,0 +1,96 @@
+{"request": "The requested research task is to compare weak, medium and strong distribution tails, using the current dataset.", "recipe": "tails"}
+{"request": "My next experiment should run the full estimator comparison. Keep its evidence local.", "recipe": "compare"}
+{"request": "For project Tissue study, I want to fit a neural background estimator.", "recipe": "neural"}
+{"request": "For project Infrastructure survey, I want to study heavy-tailed observation sensitivity.", "recipe": "tails"}
+{"request": "Can you compare weak, medium and strong distribution tails? Use independent calibration and test observations.", "recipe": "tails"}
+{"request": "Can you benchmark every background estimator? Use independent calibration and test observations.", "recipe": "compare"}
+{"request": "The requested research task is to fit a neural background estimator, using the current dataset.", "recipe": "neural"}
+{"request": "My next experiment should train the neural model on local observations. Keep its evidence local.", "recipe": "neural"}
+{"request": "Please compare exact sampling with noisy measurements. Use seed 568 for this research run.", "recipe": "measurements"}
+{"request": "I need a reproducible task: inspect the effect of measurement-bit flips.", "recipe": "measurements"}
+{"request": "Can you run the full estimator comparison? Use independent calibration and test observations.", "recipe": "compare"}
+{"request": "Please run the full estimator comparison. Use seed 928 for this research run.", "recipe": "compare"}
+{"request": "The requested research task is to train and evaluate the conditional neural network, using the current dataset.", "recipe": "neural"}
+{"request": "My next experiment should study finite measurement counts and readout errors. Keep its evidence local.", "recipe": "measurements"}
+{"request": "My next experiment should train and evaluate the conditional neural network. Keep its evidence local.", "recipe": "neural"}
+{"request": "For project Client workspace, I want to train the neural model on local observations.", "recipe": "neural"}
+{"request": "Can you train and evaluate the conditional neural network? Use independent calibration and test observations.", "recipe": "neural"}
+{"request": "Can you compare exact sampling with noisy measurements? Use independent calibration and test observations.", "recipe": "measurements"}
+{"request": "Please sweep marginal tail strength. Use seed 907 for this research run.", "recipe": "tails"}
+{"request": "For project Infrastructure survey, I want to inspect the effect of measurement-bit flips.", "recipe": "measurements"}
+{"request": "I need a reproducible task: measure shot noise sensitivity.", "recipe": "measurements"}
+{"request": "My next experiment should benchmark every background estimator. Keep its evidence local.", "recipe": "compare"}
+{"request": "For project Client workspace, I want to train and evaluate the conditional neural network.", "recipe": "neural"}
+{"request": "For project Client workspace, I want to assess the learned neural conditional mean.", "recipe": "neural"}
+{"request": "Please measure shot noise sensitivity. Use seed 179 for this research run.", "recipe": "measurements"}
+{"request": "My next experiment should repeat the experiment for three tail strengths. Keep its evidence local.", "recipe": "tails"}
+{"request": "Can you repeat the experiment for three tail strengths? Use independent calibration and test observations.", "recipe": "tails"}
+{"request": "My next experiment should compare weak, medium and strong distribution tails. Keep its evidence local.", "recipe": "tails"}
+{"request": "Can you evaluate the available methods side by side? Use independent calibration and test observations.", "recipe": "compare"}
+{"request": "The requested research task is to run the full estimator comparison, using the current dataset.", "recipe": "compare"}
+{"request": "Can you train the neural model on local observations? Use independent calibration and test observations.", "recipe": "neural"}
+{"request": "Please compare weak, medium and strong distribution tails. Use seed 778 for this research run.", "recipe": "tails"}
+{"request": "My next experiment should assess the learned neural conditional mean. Keep its evidence local.", "recipe": "neural"}
+{"request": "The requested research task is to study heavy-tailed observation sensitivity, using the current dataset.", "recipe": "tails"}
+{"request": "For project Client workspace, I want to compare classical, neural and quantum estimators.", "recipe": "compare"}
+{"request": "The requested research task is to repeat the experiment for three tail strengths, using the current dataset.", "recipe": "tails"}
+{"request": "I need a reproducible task: run the full estimator comparison.", "recipe": "compare"}
+{"request": "My next experiment should inspect the effect of measurement-bit flips. Keep its evidence local.", "recipe": "measurements"}
+{"request": "For project Tissue study, I want to compare exact sampling with noisy measurements.", "recipe": "measurements"}
+{"request": "The requested research task is to sweep marginal tail strength, using the current dataset.", "recipe": "tails"}
+{"request": "My next experiment should sweep marginal tail strength. Keep its evidence local.", "recipe": "tails"}
+{"request": "I need a reproducible task: sweep marginal tail strength.", "recipe": "tails"}
+{"request": "My next experiment should fit a neural background estimator. Keep its evidence local.", "recipe": "neural"}
+{"request": "The requested research task is to measure shot noise sensitivity, using the current dataset.", "recipe": "measurements"}
+{"request": "I need a reproducible task: study heavy-tailed observation sensitivity.", "recipe": "tails"}
+{"request": "Please assess the learned neural conditional mean. Use seed 668 for this research run.", "recipe": "neural"}
+{"request": "I need a reproducible task: compare weak, medium and strong distribution tails.", "recipe": "tails"}
+{"request": "My next experiment should compare exact sampling with noisy measurements. Keep its evidence local.", "recipe": "measurements"}
+{"request": "My next experiment should evaluate the available methods side by side. Keep its evidence local.", "recipe": "compare"}
+{"request": "Can you compare classical, neural and quantum estimators? Use independent calibration and test observations.", "recipe": "compare"}
+{"request": "My next experiment should study heavy-tailed observation sensitivity. Keep its evidence local.", "recipe": "tails"}
+{"request": "Can you inspect the effect of measurement-bit flips? Use independent calibration and test observations.", "recipe": "measurements"}
+{"request": "Can you sweep marginal tail strength? Use independent calibration and test observations.", "recipe": "tails"}
+{"request": "Please study heavy-tailed observation sensitivity. Use seed 114 for this research run.", "recipe": "tails"}
+{"request": "The requested research task is to compare classical, neural and quantum estimators, using the current dataset.", "recipe": "compare"}
+{"request": "The requested research task is to train the neural model on local observations, using the current dataset.", "recipe": "neural"}
+{"request": "The requested research task is to evaluate the available methods side by side, using the current dataset.", "recipe": "compare"}
+{"request": "For project Client workspace, I want to repeat the experiment for three tail strengths.", "recipe": "tails"}
+{"request": "Please compare classical, neural and quantum estimators. Use seed 82 for this research run.", "recipe": "compare"}
+{"request": "I need a reproducible task: train and evaluate the conditional neural network.", "recipe": "neural"}
+{"request": "Please evaluate the available methods side by side. Use seed 108 for this research run.", "recipe": "compare"}
+{"request": "Can you study heavy-tailed observation sensitivity? Use independent calibration and test observations.", "recipe": "tails"}
+{"request": "Can you study finite measurement counts and readout errors? Use independent calibration and test observations.", "recipe": "measurements"}
+{"request": "I need a reproducible task: evaluate the available methods side by side.", "recipe": "compare"}
+{"request": "Please inspect the effect of measurement-bit flips. Use seed 591 for this research run.", "recipe": "measurements"}
+{"request": "Can you assess the learned neural conditional mean? Use independent calibration and test observations.", "recipe": "neural"}
+{"request": "The requested research task is to benchmark every background estimator, using the current dataset.", "recipe": "compare"}
+{"request": "For project Tissue study, I want to compare weak, medium and strong distribution tails.", "recipe": "tails"}
+{"request": "Please fit a neural background estimator. Use seed 479 for this research run.", "recipe": "neural"}
+{"request": "I need a reproducible task: assess the learned neural conditional mean.", "recipe": "neural"}
+{"request": "The requested research task is to inspect the effect of measurement-bit flips, using the current dataset.", "recipe": "measurements"}
+{"request": "For project Infrastructure survey, I want to measure shot noise sensitivity.", "recipe": "measurements"}
+{"request": "For project Client workspace, I want to evaluate the available methods side by side.", "recipe": "compare"}
+{"request": "I need a reproducible task: compare exact sampling with noisy measurements.", "recipe": "measurements"}
+{"request": "I need a reproducible task: study finite measurement counts and readout errors.", "recipe": "measurements"}
+{"request": "I need a reproducible task: benchmark every background estimator.", "recipe": "compare"}
+{"request": "I need a reproducible task: repeat the experiment for three tail strengths.", "recipe": "tails"}
+{"request": "Can you measure shot noise sensitivity? Use independent calibration and test observations.", "recipe": "measurements"}
+{"request": "I need a reproducible task: fit a neural background estimator.", "recipe": "neural"}
+{"request": "For project Infrastructure survey, I want to study finite measurement counts and readout errors.", "recipe": "measurements"}
+{"request": "My next experiment should compare classical, neural and quantum estimators. Keep its evidence local.", "recipe": "compare"}
+{"request": "Please train and evaluate the conditional neural network. Use seed 669 for this research run.", "recipe": "neural"}
+{"request": "Please study finite measurement counts and readout errors. Use seed 639 for this research run.", "recipe": "measurements"}
+{"request": "I need a reproducible task: compare classical, neural and quantum estimators.", "recipe": "compare"}
+{"request": "The requested research task is to assess the learned neural conditional mean, using the current dataset.", "recipe": "neural"}
+{"request": "Please train the neural model on local observations. Use seed 722 for this research run.", "recipe": "neural"}
+{"request": "For project Client workspace, I want to sweep marginal tail strength.", "recipe": "tails"}
+{"request": "The requested research task is to study finite measurement counts and readout errors, using the current dataset.", "recipe": "measurements"}
+{"request": "I need a reproducible task: train the neural model on local observations.", "recipe": "neural"}
+{"request": "Please repeat the experiment for three tail strengths. Use seed 330 for this research run.", "recipe": "tails"}
+{"request": "For project Client workspace, I want to run the full estimator comparison.", "recipe": "compare"}
+{"request": "For project Tissue study, I want to benchmark every background estimator.", "recipe": "compare"}
+{"request": "Can you fit a neural background estimator? Use independent calibration and test observations.", "recipe": "neural"}
+{"request": "My next experiment should measure shot noise sensitivity. Keep its evidence local.", "recipe": "measurements"}
+{"request": "The requested research task is to compare exact sampling with noisy measurements, using the current dataset.", "recipe": "measurements"}
+{"request": "Please benchmark every background estimator. Use seed 816 for this research run.", "recipe": "compare"}

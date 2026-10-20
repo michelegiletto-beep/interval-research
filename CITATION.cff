@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this software or synthetic benchmark, cite this version and the upstream research separately."
+type: software
+title: "Interval: Conditional Background Estimation Research Runtime"
+version: 0.1.0
+date-released: 2026-10-20
+authors:
+  - family-names: Giletto
+    given-names: Michele
+license: Apache-2.0
+repository-code: "https://github.com/michelegiletto-beep/interval-research"
+url: "https://huggingface.co/spaces/Magic51/interval-research"
+keywords:
+  - conditional estimation
+  - change detection
+  - copula
+  - quantum circuit Born machine
+  - reproducible research

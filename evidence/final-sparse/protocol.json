@@ -1,0 +1,39 @@
+{
+  "seeds": [
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40
+  ],
+  "bits": [
+    3,
+    4,
+    5
+  ],
+  "tails": [
+    1.1
+  ],
+  "training_pixels": [
+    64,
+    256,
+    1024
+  ],
+  "scorers": [
+    "absolute",
+    "log"
+  ],
+  "role": "sparsity extension",
+  "test_shifts": [
+    0.0
+  ],
+  "steps": 80,
+  "protocol_written_before_execution": true,
+  "unit": "independent training/calibration/test scene groups; average test metrics per seed",
+  "inference": "synthetic benchmark, not evidence of clinical or satellite performance"
+}

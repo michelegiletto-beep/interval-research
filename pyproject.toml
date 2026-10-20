@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "interval-research"
+version = "0.1.0"
+description = "Local change-detection experiments with auditable model-assisted execution."
+requires-python = ">=3.11"
+license = "Apache-2.0"
+authors = [{name = "Michele Giletto"}]
+dependencies = ["numpy>=2.0,<3", "scipy>=1.14,<2", "torch>=2.6,<3", "scikit-learn>=1.5,<2", "fastapi>=0.115,<1", "uvicorn>=0.34,<1", "pydantic>=2.10,<3", "python-multipart>=0.0.20,<1", "safetensors>=0.5,<1"]
+
+[project.optional-dependencies]
+planner = ["transformers>=4.51,<5", "peft>=0.17,<0.19", "accelerate>=1.9,<2", "huggingface-hub>=0.34,<1"]
+dev = ["pytest>=8,<10", "httpx>=0.28,<1", "matplotlib>=3.9,<4"]
+
+[project.scripts]
+interval = "interval.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["interval*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

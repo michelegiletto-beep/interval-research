@@ -1,0 +1,1 @@
+{"name":"Tissue research","purpose":"Image repeatability and longitudinal change assessment for research","status":"reference profile; not clinically validated","data":"independent patient-level splits required","procedure":"compare","config":{"score_mode":"log","bits":4,"training_pixels":1024},"external_actions":[]}

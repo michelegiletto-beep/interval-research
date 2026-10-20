@@ -1,0 +1,32 @@
+{"request": "Arrange a documented experiment to compare classical, neural and quantum estimators. Project: External evaluation; seed: 353.", "recipe": "compare"}
+{"request": "Arrange a documented experiment to benchmark every background estimator. Project: External evaluation; seed: 462.", "recipe": "compare"}
+{"request": "Arrange a documented experiment to run the full estimator comparison. Project: External evaluation; seed: 58.", "recipe": "compare"}
+{"request": "Arrange a documented experiment to evaluate the available methods side by side. Project: External evaluation; seed: 947.", "recipe": "compare"}
+{"request": "The lab would like to compare classical, neural and quantum estimators. Which available workflow should run?", "recipe": "compare"}
+{"request": "The lab would like to benchmark every background estimator. Which available workflow should run?", "recipe": "compare"}
+{"request": "The lab would like to run the full estimator comparison. Which available workflow should run?", "recipe": "compare"}
+{"request": "The lab would like to evaluate the available methods side by side. Which available workflow should run?", "recipe": "compare"}
+{"request": "Arrange a documented experiment to sweep marginal tail strength. Project: External evaluation; seed: 553.", "recipe": "tails"}
+{"request": "Arrange a documented experiment to study heavy-tailed observation sensitivity. Project: External evaluation; seed: 539.", "recipe": "tails"}
+{"request": "Arrange a documented experiment to compare weak, medium and strong distribution tails. Project: External evaluation; seed: 413.", "recipe": "tails"}
+{"request": "Arrange a documented experiment to repeat the experiment for three tail strengths. Project: External evaluation; seed: 150.", "recipe": "tails"}
+{"request": "The lab would like to sweep marginal tail strength. Which available workflow should run?", "recipe": "tails"}
+{"request": "The lab would like to study heavy-tailed observation sensitivity. Which available workflow should run?", "recipe": "tails"}
+{"request": "The lab would like to compare weak, medium and strong distribution tails. Which available workflow should run?", "recipe": "tails"}
+{"request": "The lab would like to repeat the experiment for three tail strengths. Which available workflow should run?", "recipe": "tails"}
+{"request": "Arrange a documented experiment to study finite measurement counts and readout errors. Project: External evaluation; seed: 977.", "recipe": "measurements"}
+{"request": "Arrange a documented experiment to compare exact sampling with noisy measurements. Project: External evaluation; seed: 811.", "recipe": "measurements"}
+{"request": "Arrange a documented experiment to measure shot noise sensitivity. Project: External evaluation; seed: 583.", "recipe": "measurements"}
+{"request": "Arrange a documented experiment to inspect the effect of measurement-bit flips. Project: External evaluation; seed: 207.", "recipe": "measurements"}
+{"request": "The lab would like to study finite measurement counts and readout errors. Which available workflow should run?", "recipe": "measurements"}
+{"request": "The lab would like to compare exact sampling with noisy measurements. Which available workflow should run?", "recipe": "measurements"}
+{"request": "The lab would like to measure shot noise sensitivity. Which available workflow should run?", "recipe": "measurements"}
+{"request": "The lab would like to inspect the effect of measurement-bit flips. Which available workflow should run?", "recipe": "measurements"}
+{"request": "Arrange a documented experiment to train and evaluate the conditional neural network. Project: External evaluation; seed: 381.", "recipe": "neural"}
+{"request": "Arrange a documented experiment to fit a neural background estimator. Project: External evaluation; seed: 799.", "recipe": "neural"}
+{"request": "Arrange a documented experiment to assess the learned neural conditional mean. Project: External evaluation; seed: 918.", "recipe": "neural"}
+{"request": "Arrange a documented experiment to train the neural model on local observations. Project: External evaluation; seed: 25.", "recipe": "neural"}
+{"request": "The lab would like to train and evaluate the conditional neural network. Which available workflow should run?", "recipe": "neural"}
+{"request": "The lab would like to fit a neural background estimator. Which available workflow should run?", "recipe": "neural"}
+{"request": "The lab would like to assess the learned neural conditional mean. Which available workflow should run?", "recipe": "neural"}
+{"request": "The lab would like to train the neural model on local observations. Which available workflow should run?", "recipe": "neural"}
