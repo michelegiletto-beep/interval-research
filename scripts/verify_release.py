@@ -41,6 +41,6 @@ report = {"version":"0.1.0","manifest_files_verified":len(manifest["files"]),"nu
           "portable_adapter_metadata":True,"source_archive_tests":"12 passed",
           "desktop_ui":"Completed model-selected comparison and three-count measurement sweep",
           "narrow_viewport":"Browser override returned desktop dimensions; narrow-screen visual verification unavailable",
-          "container":"Docker source prepared; remote executable build checked during publication"}
+          "container":"Self-hosted Docker build not executed; hosted Gradio verification recorded separately"}
 (root / "evidence" / "release-verification.json").write_text(json.dumps(report,indent=2))
 print(json.dumps(report))

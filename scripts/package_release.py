@@ -16,7 +16,7 @@ for directory in roots:
     files += [p for p in (root / directory).rglob("*") if p.is_file() and "__pycache__" not in p.parts and p.suffix not in {".pyc"}]
 for directory in ("evidence/final-dense","evidence/final-sparse","evidence/invariance","evidence/figures","evidence/showcase"):
     files += [p for p in (root / directory).rglob("*") if p.is_file()]
-for name in ("evidence/report-summary.json","evidence/environment-lock.json","models/base-model.json","models/training-receipt.json",
+for name in ("evidence/README.md","evidence/report-summary.json","evidence/environment-lock.json","models/base-model.json","models/training-receipt.json",
              "models/planner/adapter_config.json","models/planner/adapter_model.safetensors"):
     files.append(root / name)
 files += [p for p in (root / "publication").glob("*.md") if p.is_file()]
@@ -82,7 +82,10 @@ institutional service. No quantum advantage is established.
 
 The base weights are pinned and downloaded during the first startup. All
 subsequent model inference executes inside the application runtime. A Gradio
-status panel is mounted alongside the FastAPI research interface.
+status panel at `/runtime-status` is mounted alongside the FastAPI research
+interface. It includes an optional GPU inference check of the adapted planner;
+the main research workspace executes on CPU. That optional check uses the
+visitor's applicable ZeroGPU quota and does not launch numerical experiments.
 ''',encoding="utf-8")
 receipt = {"files":len(files),"source_archive":str(archive),"source_zip":str(zip_path),
            "archive_sha256":sha256(archive.read_bytes()).hexdigest(),"bytes":archive.stat().st_size,

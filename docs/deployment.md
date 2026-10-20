@@ -6,11 +6,11 @@ Interval 0.1.0 is delivered as editable source and a Docker reference applicatio
 
 The local CLI uses `python -m interval.cli serve --port 8765`. All model inference happens locally after the pinned base-weight download. No OpenAI key is used. A base model without the supplied adapter can still run, but its measured procedure-selection accuracy is substantially lower; inspect the installed model card and receipt.
 
-## Docker demonstration
+## Hosted demonstration and Docker reference
 
 The public Hugging Face Space runs the same backend and interface in synthetic-only mode through the Gradio SDK, with a Gradio diagnostics panel alongside the FastAPI interface. The pinned public base weights download during first startup; the adapted weights are included in the source package. Inference does not call an external model service. Public mode rejects own-data uploads, large configurations and multi-run sweeps. It admits at most one job per 20 seconds, has one execution worker and two admitted slots, retains at most 20 completed generated records on disk and eight in memory. Public run IDs are unguessable capability links; prompts are not listed to other visitors. Do not enter confidential information into a public demonstration.
 
-The separate root Dockerfile is an optional self-hosted reference. It downloads the pinned base during image construction. Hugging Face currently gates Docker creation behind a paid plan; this release uses the account's available free Gradio/ZeroGPU path without purchasing hosting. Numerical work and the small language model execute on CPU; no GPU allocation is requested.
+The separate root Dockerfile is an optional self-hosted reference. It downloads the pinned base during image construction. On the publishing account, Hugging Face gates Docker creation behind a paid plan; this release uses the available free Gradio/ZeroGPU path without purchasing hosting. The Gradio SDK is pinned to 5.49.1 for compatibility with Transformers 4.57.6. Main-workspace numerical work and procedure selection execute on CPU. The `/runtime-status` panel additionally offers an optional GPU inference check of the adapted planner through `spaces.GPU`; it returns a procedure proposal without executing an experiment and uses the visitor's applicable ZeroGPU quota.
 
 Environment variables:
 

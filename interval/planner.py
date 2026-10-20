@@ -42,7 +42,7 @@ def load_model(use_adapter=True):
     adapter = ROOT / "models" / "planner"
     if use_adapter and (adapter / "adapter_config.json").exists():
         from peft import PeftModel
-        model = PeftModel.from_pretrained(model, adapter, is_trainable=False)
+        model = PeftModel.from_pretrained(model, adapter, is_trainable=False, torch_device="cpu")
     model.eval()
     return tokenizer, model
 
